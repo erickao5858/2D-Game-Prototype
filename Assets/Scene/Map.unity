@@ -285,6 +285,50 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!1 &773163242
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 773163244}
+  - component: {fileID: 773163243}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &773163243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 773163242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 778d8c1ed91f8404f87be84012bba7e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  map: {fileID: 967308906}
+--- !u!4 &773163244
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 773163242}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -15.819971, y: -27.121685, z: 40.720898}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &967308905
 GameObject:
   m_ObjectHideFlags: 0
@@ -318,7 +362,7 @@ MonoBehaviour:
   _options:
     locationOptions:
       latitudeLongitude: -37.6836, 144.5828
-      zoom: 14.96
+      zoom: 15
     extentOptions:
       extentType: 0
       defaultExtents:
@@ -433,569 +477,9 @@ MonoBehaviour:
       - coreOptions:
           sourceId: 
           isActive: 1
-          sublayerName: Arts and Entertainment
-          geometryType: 0
-          layerName: poi_label
-          snapToTerrain: 1
-          combineMeshes: 0
-        lineGeometryOptions:
-          Width: 1
-          MiterLimit: 0.2
-          RoundLimit: 1.05
-          JoinType: 1
-          CapType: 1
-        filterOptions:
-          _selectedLayerName: 
-          filters:
-          - Key: maki
-            KeyDescription: 
-            PropertyValue: art-gallery,cinema,stadium,museum,library,zoo,music,theatre,amusement-park
-            Min: 0
-            Max: 0
-            filterOperator: 0
-          - Key: localrank
-            KeyDescription: 
-            PropertyValue: 
-            Min: 15
-            Max: 0
-            filterOperator: 3
-          combinerType: 1
-        extrusionOptions:
-          _selectedLayerName: 
-          extrusionType: 0
-          extrusionGeometryType: 0
-          propertyName: height
-          propertyDescription: 
-          minimumHeight: 0
-          maximumHeight: 0
-          extrusionScaleFactor: 1
-        colliderOptions:
-          colliderType: 0
-        materialOptions:
-          style: 0
-          texturingType: 0
-          materials: []
-          atlasInfo: {fileID: 0}
-          lightStyleOpacity: 1
-          darkStyleOpacity: 1
-          colorStyleColor: {r: 1, g: 1, b: 1, a: 1}
-          samplePalettes: 0
-          colorPalette: {fileID: 0}
-          customStyleOptions:
-            texturingType: 0
-            materials:
-            - Materials:
-              - {fileID: 0}
-            - Materials:
-              - {fileID: 0}
-            atlasInfo: {fileID: 0}
-            colorPalette: {fileID: 0}
-        performanceOptions:
-          isEnabled: 1
-          entityPerCoroutine: 20
-        honorBuildingIdSetting: 0
-        buildingsWithUniqueIds: 0
-        moveFeaturePositionTo: 1
-        MeshModifiers: []
-        GoModifiers: []
-        presetFeatureType: 4
-        _maskValue: 0
-        selectedTypes: 
-        spawnPrefabOptions:
-          prefab: {fileID: 1895949781674336, guid: 29d1abf5ba6514d81a7974353f130ca8,
-            type: 3}
-          scaleDownWithWorld: 1
-        findByType: 0
-        categories: 1
-        nameString: 
-        coordinates: []
-        density: 15
-      - coreOptions:
-          sourceId: 
-          isActive: 1
-          sublayerName: Food
-          geometryType: 0
-          layerName: poi_label
-          snapToTerrain: 1
-          combineMeshes: 0
-        lineGeometryOptions:
-          Width: 1
-          MiterLimit: 0.2
-          RoundLimit: 1.05
-          JoinType: 1
-          CapType: 1
-        filterOptions:
-          _selectedLayerName: 
-          filters:
-          - Key: maki
-            KeyDescription: 
-            PropertyValue: cafe,bakery,fast-food,grocery,ice-cream,restaurant
-            Min: 0
-            Max: 0
-            filterOperator: 0
-          - Key: localrank
-            KeyDescription: 
-            PropertyValue: 
-            Min: 15
-            Max: 0
-            filterOperator: 3
-          combinerType: 1
-        extrusionOptions:
-          _selectedLayerName: 
-          extrusionType: 0
-          extrusionGeometryType: 0
-          propertyName: height
-          propertyDescription: 
-          minimumHeight: 0
-          maximumHeight: 0
-          extrusionScaleFactor: 1
-        colliderOptions:
-          colliderType: 0
-        materialOptions:
-          style: 0
-          texturingType: 0
-          materials: []
-          atlasInfo: {fileID: 0}
-          lightStyleOpacity: 1
-          darkStyleOpacity: 1
-          colorStyleColor: {r: 1, g: 1, b: 1, a: 1}
-          samplePalettes: 0
-          colorPalette: {fileID: 0}
-          customStyleOptions:
-            texturingType: 0
-            materials:
-            - Materials:
-              - {fileID: 0}
-            - Materials:
-              - {fileID: 0}
-            atlasInfo: {fileID: 0}
-            colorPalette: {fileID: 0}
-        performanceOptions:
-          isEnabled: 1
-          entityPerCoroutine: 20
-        honorBuildingIdSetting: 0
-        buildingsWithUniqueIds: 0
-        moveFeaturePositionTo: 1
-        MeshModifiers: []
-        GoModifiers: []
-        presetFeatureType: 4
-        _maskValue: 0
-        selectedTypes: 
-        spawnPrefabOptions:
-          prefab: {fileID: 1707885508695930, guid: fafbd32423ea04e379d8321b4d370fea,
-            type: 3}
-          scaleDownWithWorld: 1
-        findByType: 0
-        categories: 2
-        nameString: 
-        coordinates: []
-        density: 15
-      - coreOptions:
-          sourceId: 
-          isActive: 1
-          sublayerName: Nightlife
-          geometryType: 0
-          layerName: poi_label
-          snapToTerrain: 1
-          combineMeshes: 0
-        lineGeometryOptions:
-          Width: 1
-          MiterLimit: 0.2
-          RoundLimit: 1.05
-          JoinType: 1
-          CapType: 1
-        filterOptions:
-          _selectedLayerName: 
-          filters:
-          - Key: maki
-            KeyDescription: 
-            PropertyValue: bar,beer
-            Min: 0
-            Max: 0
-            filterOperator: 0
-          - Key: localrank
-            KeyDescription: 
-            PropertyValue: 
-            Min: 15
-            Max: 0
-            filterOperator: 3
-          combinerType: 1
-        extrusionOptions:
-          _selectedLayerName: 
-          extrusionType: 0
-          extrusionGeometryType: 0
-          propertyName: height
-          propertyDescription: 
-          minimumHeight: 0
-          maximumHeight: 0
-          extrusionScaleFactor: 1
-        colliderOptions:
-          colliderType: 0
-        materialOptions:
-          style: 0
-          texturingType: 0
-          materials: []
-          atlasInfo: {fileID: 0}
-          lightStyleOpacity: 1
-          darkStyleOpacity: 1
-          colorStyleColor: {r: 1, g: 1, b: 1, a: 1}
-          samplePalettes: 0
-          colorPalette: {fileID: 0}
-          customStyleOptions:
-            texturingType: 0
-            materials:
-            - Materials:
-              - {fileID: 0}
-            - Materials:
-              - {fileID: 0}
-            atlasInfo: {fileID: 0}
-            colorPalette: {fileID: 0}
-        performanceOptions:
-          isEnabled: 1
-          entityPerCoroutine: 20
-        honorBuildingIdSetting: 0
-        buildingsWithUniqueIds: 0
-        moveFeaturePositionTo: 1
-        MeshModifiers: []
-        GoModifiers: []
-        presetFeatureType: 4
-        _maskValue: 0
-        selectedTypes: 
-        spawnPrefabOptions:
-          prefab: {fileID: 1424114192387644, guid: 61bcd2d324dd34bb9b722d856749c28c,
-            type: 3}
-          scaleDownWithWorld: 1
-        findByType: 0
-        categories: 4
-        nameString: 
-        coordinates: []
-        density: 15
-      - coreOptions:
-          sourceId: 
-          isActive: 1
-          sublayerName: Outdoors and Recreation
-          geometryType: 0
-          layerName: poi_label
-          snapToTerrain: 1
-          combineMeshes: 0
-        lineGeometryOptions:
-          Width: 1
-          MiterLimit: 0.2
-          RoundLimit: 1.05
-          JoinType: 1
-          CapType: 1
-        filterOptions:
-          _selectedLayerName: 
-          filters:
-          - Key: maki
-            KeyDescription: 
-            PropertyValue: aquarium,campsite,attraction,castle,cemetery,dog-park,drinking-water,garden,golf,monument,park,picnic-site,playground,swimming
-            Min: 0
-            Max: 0
-            filterOperator: 0
-          - Key: localrank
-            KeyDescription: 
-            PropertyValue: 
-            Min: 15
-            Max: 0
-            filterOperator: 3
-          combinerType: 1
-        extrusionOptions:
-          _selectedLayerName: 
-          extrusionType: 0
-          extrusionGeometryType: 0
-          propertyName: height
-          propertyDescription: 
-          minimumHeight: 0
-          maximumHeight: 0
-          extrusionScaleFactor: 1
-        colliderOptions:
-          colliderType: 0
-        materialOptions:
-          style: 0
-          texturingType: 0
-          materials: []
-          atlasInfo: {fileID: 0}
-          lightStyleOpacity: 1
-          darkStyleOpacity: 1
-          colorStyleColor: {r: 1, g: 1, b: 1, a: 1}
-          samplePalettes: 0
-          colorPalette: {fileID: 0}
-          customStyleOptions:
-            texturingType: 0
-            materials:
-            - Materials:
-              - {fileID: 0}
-            - Materials:
-              - {fileID: 0}
-            atlasInfo: {fileID: 0}
-            colorPalette: {fileID: 0}
-        performanceOptions:
-          isEnabled: 1
-          entityPerCoroutine: 20
-        honorBuildingIdSetting: 0
-        buildingsWithUniqueIds: 0
-        moveFeaturePositionTo: 1
-        MeshModifiers: []
-        GoModifiers: []
-        presetFeatureType: 4
-        _maskValue: 0
-        selectedTypes: 
-        spawnPrefabOptions:
-          prefab: {fileID: 1004221095257992, guid: b0e54a880e97f4c5ead7dcc1c0918e05,
-            type: 3}
-          scaleDownWithWorld: 1
-        findByType: 0
-        categories: 8
-        nameString: 
-        coordinates: []
-        density: 15
-      - coreOptions:
-          sourceId: 
-          isActive: 1
-          sublayerName: Services
-          geometryType: 0
-          layerName: poi_label
-          snapToTerrain: 1
-          combineMeshes: 0
-        lineGeometryOptions:
-          Width: 1
-          MiterLimit: 0.2
-          RoundLimit: 1.05
-          JoinType: 1
-          CapType: 1
-        filterOptions:
-          _selectedLayerName: 
-          filters:
-          - Key: maki
-            KeyDescription: 
-            PropertyValue: bank,dentist,toilet,veterinary,pharmacy,college,school,hospital,place-of-worship,religious-christian,religious-jewish,religious-muslim,police,post,doctor,fire-station,information,town-hall,prison,embassy,fuel,laundry,lodging
-            Min: 0
-            Max: 0
-            filterOperator: 0
-          - Key: localrank
-            KeyDescription: 
-            PropertyValue: 
-            Min: 10
-            Max: 0
-            filterOperator: 3
-          combinerType: 1
-        extrusionOptions:
-          _selectedLayerName: 
-          extrusionType: 0
-          extrusionGeometryType: 0
-          propertyName: height
-          propertyDescription: 
-          minimumHeight: 0
-          maximumHeight: 0
-          extrusionScaleFactor: 1
-        colliderOptions:
-          colliderType: 0
-        materialOptions:
-          style: 0
-          texturingType: 0
-          materials: []
-          atlasInfo: {fileID: 0}
-          lightStyleOpacity: 1
-          darkStyleOpacity: 1
-          colorStyleColor: {r: 1, g: 1, b: 1, a: 1}
-          samplePalettes: 0
-          colorPalette: {fileID: 0}
-          customStyleOptions:
-            texturingType: 0
-            materials:
-            - Materials:
-              - {fileID: 0}
-            - Materials:
-              - {fileID: 0}
-            atlasInfo: {fileID: 0}
-            colorPalette: {fileID: 0}
-        performanceOptions:
-          isEnabled: 1
-          entityPerCoroutine: 20
-        honorBuildingIdSetting: 0
-        buildingsWithUniqueIds: 0
-        moveFeaturePositionTo: 1
-        MeshModifiers: []
-        GoModifiers: []
-        presetFeatureType: 4
-        _maskValue: 0
-        selectedTypes: 
-        spawnPrefabOptions:
-          prefab: {fileID: 1550249727436304, guid: 60a41cfc23d514878814f0d425912eff,
-            type: 3}
-          scaleDownWithWorld: 1
-        findByType: 0
-        categories: 16
-        nameString: 
-        coordinates: []
-        density: 10
-      - coreOptions:
-          sourceId: 
-          isActive: 1
-          sublayerName: Shops
-          geometryType: 0
-          layerName: poi_label
-          snapToTerrain: 1
-          combineMeshes: 0
-        lineGeometryOptions:
-          Width: 1
-          MiterLimit: 0.2
-          RoundLimit: 1.05
-          JoinType: 1
-          CapType: 1
-        filterOptions:
-          _selectedLayerName: 
-          filters:
-          - Key: maki
-            KeyDescription: 
-            PropertyValue: alcohol-shop,clothing-store,shop
-            Min: 0
-            Max: 0
-            filterOperator: 0
-          - Key: localrank
-            KeyDescription: 
-            PropertyValue: 
-            Min: 15
-            Max: 0
-            filterOperator: 3
-          combinerType: 1
-        extrusionOptions:
-          _selectedLayerName: 
-          extrusionType: 0
-          extrusionGeometryType: 0
-          propertyName: height
-          propertyDescription: 
-          minimumHeight: 0
-          maximumHeight: 0
-          extrusionScaleFactor: 1
-        colliderOptions:
-          colliderType: 0
-        materialOptions:
-          style: 0
-          texturingType: 0
-          materials: []
-          atlasInfo: {fileID: 0}
-          lightStyleOpacity: 1
-          darkStyleOpacity: 1
-          colorStyleColor: {r: 1, g: 1, b: 1, a: 1}
-          samplePalettes: 0
-          colorPalette: {fileID: 0}
-          customStyleOptions:
-            texturingType: 0
-            materials:
-            - Materials:
-              - {fileID: 0}
-            - Materials:
-              - {fileID: 0}
-            atlasInfo: {fileID: 0}
-            colorPalette: {fileID: 0}
-        performanceOptions:
-          isEnabled: 1
-          entityPerCoroutine: 20
-        honorBuildingIdSetting: 0
-        buildingsWithUniqueIds: 0
-        moveFeaturePositionTo: 1
-        MeshModifiers: []
-        GoModifiers: []
-        presetFeatureType: 4
-        _maskValue: 0
-        selectedTypes: 
-        spawnPrefabOptions:
-          prefab: {fileID: 1665298560487606, guid: 49bc5d782d9184533a37abea20ed30e4,
-            type: 3}
-          scaleDownWithWorld: 1
-        findByType: 0
-        categories: 32
-        nameString: 
-        coordinates: []
-        density: 15
-      - coreOptions:
-          sourceId: 
-          isActive: 1
-          sublayerName: Transportation
-          geometryType: 0
-          layerName: poi_label
-          snapToTerrain: 1
-          combineMeshes: 0
-        lineGeometryOptions:
-          Width: 1
-          MiterLimit: 0.2
-          RoundLimit: 1.05
-          JoinType: 1
-          CapType: 1
-        filterOptions:
-          _selectedLayerName: 
-          filters:
-          - Key: maki
-            KeyDescription: 
-            PropertyValue: bus,car,bicycle-share,bicycle,airfield,ferry,harbor,heliport
-            Min: 0
-            Max: 0
-            filterOperator: 0
-          - Key: localrank
-            KeyDescription: 
-            PropertyValue: 
-            Min: 15
-            Max: 0
-            filterOperator: 3
-          combinerType: 1
-        extrusionOptions:
-          _selectedLayerName: 
-          extrusionType: 0
-          extrusionGeometryType: 0
-          propertyName: height
-          propertyDescription: 
-          minimumHeight: 0
-          maximumHeight: 0
-          extrusionScaleFactor: 1
-        colliderOptions:
-          colliderType: 0
-        materialOptions:
-          style: 0
-          texturingType: 0
-          materials: []
-          atlasInfo: {fileID: 0}
-          lightStyleOpacity: 1
-          darkStyleOpacity: 1
-          colorStyleColor: {r: 1, g: 1, b: 1, a: 1}
-          samplePalettes: 0
-          colorPalette: {fileID: 0}
-          customStyleOptions:
-            texturingType: 0
-            materials:
-            - Materials:
-              - {fileID: 0}
-            - Materials:
-              - {fileID: 0}
-            atlasInfo: {fileID: 0}
-            colorPalette: {fileID: 0}
-        performanceOptions:
-          isEnabled: 1
-          entityPerCoroutine: 20
-        honorBuildingIdSetting: 0
-        buildingsWithUniqueIds: 0
-        moveFeaturePositionTo: 1
-        MeshModifiers: []
-        GoModifiers: []
-        presetFeatureType: 4
-        _maskValue: 0
-        selectedTypes: 
-        spawnPrefabOptions:
-          prefab: {fileID: 1295758952425276, guid: 22150daba6e8b47b69fd30f00b9c56cd,
-            type: 3}
-          scaleDownWithWorld: 1
-        findByType: 0
-        categories: 64
-        nameString: 
-        coordinates: []
-        density: 15
-      - coreOptions:
-          sourceId: 
-          isActive: 0
           sublayerName: All POIs
           geometryType: 0
-          layerName: poi_label
+          layerName: 
           snapToTerrain: 1
           combineMeshes: 0
         lineGeometryOptions:
@@ -1006,13 +490,7 @@ MonoBehaviour:
           CapType: 1
         filterOptions:
           _selectedLayerName: 
-          filters:
-          - Key: maki
-            KeyDescription: 
-            PropertyValue: art-gallery,cinema,stadium,museum,library,zoo,music,theatre,amusement-park,cafe,bakery,fast-food,grocery,ice-cream,restaurant,bar,beer,aquarium,campsite,attraction,castle,cemetery,dog-park,drinking-water,garden,golf,monument,park,picnic-site,playground,swimming,bank,dentist,toilet,veterinary,pharmacy,college,school,hospital,place-of-worship,religious-christian,religious-jewish,religious-muslim,police,post,doctor,fire-station,information,town-hall,prison,embassy,fuel,laundry,lodging,alcohol-shop,clothing-store,shop,bus,car,bicycle-share,bicycle,airfield,ferry,harbor,heliport
-            Min: 0
-            Max: 0
-            filterOperator: 0
+          filters: []
           combinerType: 1
         extrusionOptions:
           _selectedLayerName: 
@@ -1056,13 +534,15 @@ MonoBehaviour:
         _maskValue: 0
         selectedTypes: 
         spawnPrefabOptions:
-          prefab: {fileID: 1396740541782364, guid: d748e6a0b26334f4d933c1438339484d,
+          prefab: {fileID: 9035543527566345889, guid: f4c99c701498b974cbe015190e9fdf06,
             type: 3}
           scaleDownWithWorld: 1
         findByType: 0
         categories: -1
         nameString: 
-        coordinates: []
+        coordinates:
+        - -37.682014, 144.596770
+        - -37.683502, 144.591989
         density: 30
   _tileProvider: {fileID: 0}
   _previewOptions:
