@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1257486800756004
+--- !u!1 &3204998835093382525
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,24 +8,24 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4867834046800562}
-  - component: {fileID: 114478715909612932}
-  - component: {fileID: 4268355246010361865}
-  - component: {fileID: 6916278438876581730}
+  - component: {fileID: 3204998835093382527}
+  - component: {fileID: 3204998835093382526}
+  - component: {fileID: 3204998835093382520}
+  - component: {fileID: 3204998835093382521}
   m_Layer: 0
-  m_Name: Map
+  m_Name: Map 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4867834046800562
+--- !u!4 &3204998835093382527
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1257486800756004}
+  m_GameObject: {fileID: 3204998835093382525}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -33,13 +33,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114478715909612932
+--- !u!114 &3204998835093382526
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1257486800756004}
+  m_GameObject: {fileID: 3204998835093382525}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cd961b1c9541a4cee99686069ecce852, type: 3}
@@ -47,8 +47,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _options:
     locationOptions:
-      latitudeLongitude: -37.6836, 144.5828
-      zoom: 16
+      latitudeLongitude: -37.682437, 144.595993
+      zoom: 15
     extentOptions:
       extentType: 0
       defaultExtents:
@@ -63,11 +63,11 @@ MonoBehaviour:
           south: 1
         rangeAroundTransformOptions:
           targetTransform: {fileID: 0}
-          visibleBuffer: 0
-          disposeBuffer: 0
+          visibleBuffer: 1
+          disposeBuffer: 1
     placementOptions:
       placementType: 1
-      snapMapToZero: 0
+      snapMapToZero: 1
     scalingOptions:
       scalingType: 1
       unityTileSize: 100
@@ -85,9 +85,9 @@ MonoBehaviour:
           Modified: 
           UserName: 
       rasterOptions:
-        useRetina: 1
+        useRetina: 0
         useCompression: 0
-        useMipMap: 1
+        useMipMap: 0
   _terrain:
     _layerProperty:
       sourceType: 0
@@ -118,7 +118,29 @@ MonoBehaviour:
     _layerProperty:
       tileJsonData:
         tileJSONLoaded: 0
-        LayerDisplayNames: []
+        LayerDisplayNames:
+        - admin
+        - aeroway
+        - airport_label
+        - barrier_line
+        - building
+        - country_label
+        - housenum_label
+        - landuse
+        - landuse_overlay
+        - marine_label
+        - motorway_junction
+        - mountain_peak_label
+        - place_label
+        - poi_label
+        - rail_station_label
+        - road
+        - road_label
+        - state_label
+        - water
+        - water_label
+        - waterway
+        - waterway_label
       _sourceType: 1
       sourceOptions:
         isActive: 1
@@ -141,30 +163,13 @@ MonoBehaviour:
   _tileProvider: {fileID: 0}
   _previewOptions:
     isPreviewEnabled: 0
---- !u!114 &4268355246010361865
+--- !u!114 &3204998835093382520
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1257486800756004}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcf32ea2cc0514b569329f6b6b68f9b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _map: {fileID: 114478715909612932}
-  _locationStrings: []
-  _spawnScale: 100
-  _markerPrefab: {fileID: 1839187062704024, guid: 9b5b1b761a8994c07affd0a05396633b,
-    type: 3}
---- !u!114 &6916278438876581730
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1257486800756004}
+  m_GameObject: {fileID: 3204998835093382525}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2c699b8e1864b4b248acb7a04ede9480, type: 3}
@@ -173,5 +178,32 @@ MonoBehaviour:
   _panSpeed: 1
   _zoomSpeed: 0.25
   _referenceCamera: {fileID: 0}
-  _mapManager: {fileID: 114478715909612932}
+  _mapManager: {fileID: 3204998835093382526}
   _useDegreeMethod: 0
+--- !u!114 &3204998835093382521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3204998835093382525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0a35467ab333db45ba391c5d796bfa7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _map: {fileID: 3204998835093382526}
+  _spawnScale: 10
+  _markerPrefab: {fileID: 8097544832903087818, guid: 1ca45928720837940a11d1e86c075b07,
+    type: 3}
+  _targetTextBox: {fileID: 0}
+  _locations:
+  - Name: Place 1
+    Position: -37.683502, 144.591989
+    Description: A good place
+  - Name: Place 2
+    Position: -37.682343, 144.597094
+    Description: A bad place
+  - Name: Place 3
+    Position: -37.6836, 144.5828
+    Description: A bad placeaaaaaa

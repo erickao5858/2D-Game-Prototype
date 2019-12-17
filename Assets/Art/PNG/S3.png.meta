@@ -4,10 +4,13 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 2504170125896549414
-    second: Background
+    second: Map
   - first:
       213: 5824681278079169384
     second: NextButton
+  - first:
+      213: 2504170125896549414
+    second: Background
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -123,15 +126,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Background
+      name: Map
       rect:
         serializedVersion: 2
         x: 1
         y: 0
-        width: 1245
+        width: 751
         height: 534
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -152,7 +155,7 @@ TextureImporter:
         width: 90
         height: 82
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -160,6 +163,27 @@ TextureImporter:
       bones: []
       spriteID: bdce4317413d66545ac4c7e0319622fe
       internalID: 5824681278079169384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 0
+        width: 489
+        height: 534
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9151b41181c5df9408fd43b8701e3342
+      internalID: 2504170125896549414
       vertices: []
       indices: 
       edges: []
