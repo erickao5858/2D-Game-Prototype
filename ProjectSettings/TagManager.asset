@@ -4,7 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - POI
+  - Collection
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -14,7 +15,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Ground
   - 
   - 
   - 
@@ -39,12 +40,21 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Background
-    uniqueID: 2348666949
-    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Foreground
-    uniqueID: 1290434049
+  - name: BackGround
+    uniqueID: 905966199
+    locked: 0
+  - name: Environment
+    uniqueID: 3029727745
+    locked: 0
+  - name: Player
+    uniqueID: 1086906927
+    locked: 0
+  - name: FrontGround
+    uniqueID: 1811434983
+    locked: 0
+  - name: Ground
+    uniqueID: 3127046729
     locked: 0
