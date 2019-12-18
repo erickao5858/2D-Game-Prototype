@@ -26,4 +26,8 @@ public class ButtonControl : MonoBehaviour
     {
         _gameManager.SwitchScene("CutScene");
     }
+    public void ButtonToLevel1_Click(int subLevel)
+    {
+        _gameManager.SwitchScene("Level1'" + subLevel);
+    }
 }
