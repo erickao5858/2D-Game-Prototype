@@ -15,6 +15,7 @@ public class Movement : MonoBehaviour
     public Text Cherry_Num;
     private bool isHurt;//defaut value is flase
     // Start is called before the first frame update
+    public Joystick joystick;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -33,21 +34,25 @@ public class Movement : MonoBehaviour
 
       void Move()
     {
-        float horziontalmove = Input.GetAxis("Horizontal");
-        float facedirection = Input.GetAxisRaw("Horizontal");
+        float horziontalmove = joystick.Horizontal;
+        float facedirection = joystick.Horizontal;
         //character movement
-        if(horziontalmove!=0)
+        if(horziontalmove!=0f)
         {
             rb.velocity = new Vector2(horziontalmove * speed*Time.deltaTime, rb.velocity.y);
             anim.SetFloat("running", Mathf.Abs(facedirection));
         }
        
-        if(facedirection!=0)
+        if(facedirection>0f)
         {
-            transform.localScale = new Vector3(facedirection, 1, 1);
+            transform.localScale = new Vector3(1, 1, 1);
+        }
+                if(facedirection<0f)
+        {
+            transform.localScale = new Vector3(-1, 1, 1);
         }
         //character jump
-        if (Input.GetButtonDown("Jump")&& coll.IsTouchingLayers(ground))
+        if (joystick.Vertical>0.5f&& coll.IsTouchingLayers(ground))
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpforce * Time.deltaTime);
             anim.SetBool("jumping", true);
