@@ -2,27 +2,32 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 public class ButtonControl : MonoBehaviour
 {
-    public void StartButton_Click()
+    private GameManager _gameManager;
+    void Start()
     {
-        FindCanvasGroup("CanvasS1").Hide();
-        FindCanvasGroup("CanvasS2").Show();
+        _gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
     public void SettingButton_Click()
     {
         Debug.Log("Hello World!");
     }
-    public void NextButton_Click(int nextNumber)
+    public void NextButton_Click(Canvas target)
     {
-        Canvas canvas = GetComponentInParent<Canvas>();
-        CanvasGroup canvasGroup = canvas.GetComponent<CanvasGroup>();
-        canvasGroup.Hide();
-        FindCanvasGroup("CanvasS" + nextNumber).Show();
+        gameObject.transform.parent.GetComponent<CanvasGroup>().Hide(); // hide current canvas
+        target.GetComponent<CanvasGroup>().Show(); // show next canvas
     }
-    public CanvasGroup FindCanvasGroup(string name)
+    public void MapButton_Click()
     {
-        return GameObject.Find(name).GetComponent<CanvasGroup>();
+        _gameManager.SwitchScene(gameObject.transform.parent.name, "RealWorldMap");
+    }
+    public void BackButton_Click()
+    {
+        _gameManager.SwitchScene("CutScene");
+    }
+    public void ButtonToLevel1_Click(int subLevel)
+    {
+        _gameManager.SwitchScene("Level1'" + subLevel);
     }
 }
