@@ -28,6 +28,7 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        Jump();
         if (!isHurt)
         {
             Move();
@@ -37,7 +38,7 @@ public class Movement : MonoBehaviour
     }
     private void Update()
     {
-        Jump();
+        
     }
     void Move()
     {
