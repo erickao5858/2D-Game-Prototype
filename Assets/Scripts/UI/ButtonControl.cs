@@ -2,13 +2,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 public class ButtonControl : MonoBehaviour
 {
-    private GameManager _gameManager;
-    void Start()
-    {
-        _gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
-    }
     public void SettingButton_Click()
     {
         Debug.Log("Hello World!");
@@ -20,14 +17,14 @@ public class ButtonControl : MonoBehaviour
     }
     public void MapButton_Click()
     {
-        _gameManager.SwitchScene(gameObject.transform.parent.name, "RealWorldMap");
+        GameManager.Instance.SwitchScene(gameObject.transform.parent.name, "RealWorldMap");
     }
     public void BackButton_Click()
     {
-        _gameManager.SwitchScene("CutScene");
+        SceneManager.LoadScene("CutScene");
     }
     public void ButtonToLevel1_Click(int subLevel)
     {
-        _gameManager.SwitchScene("Level1'" + subLevel);
+        GameManager.Instance.SwitchScene(gameObject.transform.parent.name,"Level1'" + subLevel);
     }
 }

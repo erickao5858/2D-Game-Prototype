@@ -18,22 +18,11 @@ public class Movement : MonoBehaviour
     public Joystick joystick;
     [SerializeField]
     private Slider _healthSlider;
-    private GameManager _gameManager;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        /*
-        if (_gameManager == null)
-        {
-            GameObject gameManagerObject = new GameObject();
-            Instantiate(gameManagerObject);
-            gameManagerObject.name = "GameManager";
-            gameManagerObject.AddComponent(typeof(GameManager));
-            Debug.Log(gameManagerObject.GetComponent<GameManager>().CurrentLife);
-        }*/
-        _gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
-        if (_healthSlider != null) _healthSlider.value = 100;
+        if (_healthSlider != null) _healthSlider.value = GameManager.Instance.CurrentLife / GameManager.Instance.MaxLife * 100f;
     }
 
     // Update is called once per frame
@@ -44,12 +33,12 @@ public class Movement : MonoBehaviour
             Move();
         }
         SwitchAnimation();
+        //Debug.Log(GameManager.Instance.CurrentLife);
     }
     private void Update()
     {
         Jump();
     }
-
     void Move()
     {
         float horziontalmove = joystick.Horizontal;
@@ -157,8 +146,8 @@ public class Movement : MonoBehaviour
     }
     private void ApplyDamage(int damage)
     {
-        _gameManager.CurrentLife -= damage;
-        _healthSlider.value = _gameManager.CurrentLife / _gameManager.MaxLife * 100f;
+        GameManager.Instance.CurrentLife -= damage;
+        _healthSlider.value = GameManager.Instance.CurrentLife / GameManager.Instance.MaxLife * 100f;
     }
     void Restart()
     {
